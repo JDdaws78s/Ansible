@@ -1,0 +1,13 @@
+- name: multi play
+  hosts: web
+  tasks:
+  - name: task from play1
+    debug:
+      msg: "task1 from play1"
+
+- name: multi play
+  hosts: web
+  tasks:
+  - name: task from play2
+    debug:
+      msg: "task1 from play2"

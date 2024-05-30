@@ -1,5 +1,5 @@
 - name: Ping
-  hosts: localhost
-  tasks:
+  hosts: web
+  tasks: # list of tasks
   - name: pinging host
     ping:

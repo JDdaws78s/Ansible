@@ -1,0 +1,7 @@
+- name: variables
+  hosts: web
+  tasks:
+  - name: wishes
+    time: 7:30 IST
+    debug:
+      msg: "{{to}} Good {{wishes}} at {{time}}"

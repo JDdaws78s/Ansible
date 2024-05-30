@@ -1,0 +1,13 @@
+[web]
+
+[web:vars]
+to: inventory
+wishes: Evening from inventory
+
+[localhost]
+localhost
+
+[localhost:vars]
+
+
+[all:children]

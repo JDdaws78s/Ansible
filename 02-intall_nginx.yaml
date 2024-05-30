@@ -1,0 +1,13 @@
+- name: install nginx
+  hosts: web
+  become: yes # equal to -b in adhoc command
+  tasks:
+  - name: install nginx
+    dnf:
+      name: nginx
+      state: latest
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes

@@ -1,0 +1,22 @@
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+  - name: check user exits or not
+    command: id expense
+    register: user
+    ignore_errors: true
+  
+  - name: register output
+    debug:
+      msg: "{{user}}"
+  
+  - name: create user
+    command: useradd expense
+    when: user.rc != 0
+  
+  - name: echo
+    debug:
+      msg: "hello"
+  
+  

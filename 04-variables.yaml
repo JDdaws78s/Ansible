@@ -1,0 +1,10 @@
+- name: variables
+  hosts: web
+  vars:
+    wishes: Morning
+    to: suresh
+  tasks:
+  - name: wishes
+    debug:
+      msg: "{{to}} Good {{wishes}}"
+  
