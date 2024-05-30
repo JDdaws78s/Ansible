@@ -2,6 +2,7 @@
   hosts: web
   tasks:
   - name: wishes
-    time: 7:30 IST
+    vars:
+      time: 7:30 IST
     debug:
       msg: "{{to}} Good {{wishes}} at {{time}}" #pass arguments while executing command
