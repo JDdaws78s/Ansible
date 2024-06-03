@@ -2,7 +2,7 @@
   hosts: localhost
   vars_prompt:
     name: Number
-    prompt: Enter number:
+    prompt: Enter number
     private: No
   tasks:
   - name: Greater number
