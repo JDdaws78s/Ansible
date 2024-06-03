@@ -3,7 +3,7 @@
   vars_prompt:
     name: Number
     prompt: Enter number
-    private: No
+    private: Yes
   tasks:
   - name: Greater number
     debug:
