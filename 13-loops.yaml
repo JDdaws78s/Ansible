@@ -3,9 +3,8 @@
   become: yes
   tasks: 
   - name: install packages
-    package:
-      name: "{{ item }}"
-      state: installed
+    debug:
+      msg: {{ item }}
     loop:
     - git
     - nginx
