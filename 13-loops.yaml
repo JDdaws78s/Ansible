@@ -4,7 +4,7 @@
   tasks: 
   - name: install packages
     debug:
-      msg: {{ item }}
+      msg: "{{ item }}"
     loop:
     - git
     - nginx
