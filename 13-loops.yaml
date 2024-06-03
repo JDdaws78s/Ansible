@@ -1,0 +1,12 @@
+- name: install
+  hosts: localhost
+  become: Yes
+  tasks: 
+  - name: install packages
+    package:
+      name: {{ item }}
+      state: installed
+    loop:
+    - git
+    - nginx
+  
