@@ -9,3 +9,6 @@
     debug:
       msg: "given number {{ Number }} is greater than 10"
     when: Number | int > 10
+    debug:
+      msg: "given number {{ Number }} is greater than 10"
+    when: Number | int < 10
