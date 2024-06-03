@@ -1,10 +1,9 @@
 - name: variables
   hosts: web
-  vars:
+  vars: #variable declaration
     wishes: Morning
     to: suresh
   tasks:
   - name: wishes
     debug:
       msg: "{{to}} Good {{wishes}}"
-  

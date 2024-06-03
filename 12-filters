@@ -1,0 +1,11 @@
+- name: filters
+  hosts: localhost
+  vars_prompt:
+    name: Number
+    prompt: Enter number:
+    private: No
+  tasks:
+  - name: Greater number
+    debug:
+      msg: "given number {{ Number }} is greater than 10"
+    when: Number | int > 10
